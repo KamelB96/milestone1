@@ -9,7 +9,7 @@ h1, h2, h3,h4{
 
 h4{
     color: red;
-    animation: animate 1.5s linear infinite;
+    animation: animate 1s linear infinite;
     font-weight: bold;
     font-size: 20px;
 } 
