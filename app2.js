@@ -11,7 +11,7 @@ let myAudio = document.getElementById("clickSound")
 
 //Click sound function
 
-function ding () {
+function ding() {
     myAudio.play()
 }
 
@@ -27,7 +27,7 @@ function boxClick(event) {
         allBoxes[boxNum - 1] = playerX
         message.innerText = 'PLAYER 2s TURN'
         turn = playerO
-       // ding()
+        ding()
         findWinner()
         return
     }
@@ -37,7 +37,7 @@ function boxClick(event) {
             allBoxes[boxNum - 1] = playerO;
             message.innerText = 'PLAYER 1s TURN'
             turn = playerX;
-            //ding()
+            ding()
             findWinner()
             return
         }
@@ -53,14 +53,14 @@ function endGame() {
         console.log('Player 1 won')
         message.innerHTML = "X WINS";
         p1Win.innerText++;
-        
+
     }
     else if (turn === "X") {
         ding()
         console.log('Player 2 won')
         message.innerHTML = "O WINS";
         p2Win.innerText++
-        
+
     }
 
 }
@@ -75,13 +75,13 @@ function findWinner() {
         || (allBoxes[1] != null && allBoxes[1] === allBoxes[4] && allBoxes[4] === allBoxes[7])
         || (allBoxes[2] != null && allBoxes[2] === allBoxes[5] && allBoxes[5] === allBoxes[8])
         || (allBoxes[0] != null && allBoxes[0] === allBoxes[4] && allBoxes[4] === allBoxes[8])
-        || (allBoxes[2] != null && allBoxes[2] === allBoxes[4] && allBoxes[4] === allBoxes[6])){
+        || (allBoxes[2] != null && allBoxes[2] === allBoxes[4] && allBoxes[4] === allBoxes[6])) {
         console.log("winner")
         endGame();
         allBoxes.fill(null)
-        
+
     }
-    else if  ((allBoxes[0] != null && allBoxes[1] != null && allBoxes[2] != null &&
+    else if ((allBoxes[0] != null && allBoxes[1] != null && allBoxes[2] != null &&
         allBoxes[3] != null && allBoxes[4] != null && allBoxes[5] != null &&
         allBoxes[6] != null && allBoxes[7] != null && allBoxes[8] != null)) {
         draw.innerText++
