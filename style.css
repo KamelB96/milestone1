@@ -1,5 +1,5 @@
 body {
-    background-color: aqua;
+    background-color:blanchedalmond;
     font-family: 'Merienda';
 }
 
@@ -7,10 +7,11 @@ body {
 h1, h2, h3,h4{
     text-align: center;
     font-family: 'Merienda';
+    margin: 10px;
 }
 
 h4{
-    color: red;
+    color:black;
     animation: animate 1.5s linear infinite;
     font-weight: bold;
     font-size: 30px;
@@ -35,6 +36,7 @@ h4{
     margin: auto;
     display: inline-block;
     padding-right: 25px;
+    
 }
 
 /* Table */
@@ -46,21 +48,16 @@ td {
     margin: 5px auto;
   }
   .vert {
-    border-left: 2px solid black;
-    border-right: 2px solid black;
+    border-left: 5px solid black;
+    border-right: 5px solid black;
   }
   .hori {
-    border-top: 2px solid black;
-    border-bottom: 2px solid black;
+    border-top: 5px solid black;
+    border-bottom: 5px solid black;
   }
 
 
 /* button desgin */
-  #btn1, #btn2, #btn3, #btn4, #btn5, #btn6, #btn7, #btn8, #btn9{
-    height: 100px;
-    width: 100px;
-    opacity: 0%;
-  }
   #buttons{
     padding-top: 20px;
 text-align: center;
@@ -71,4 +68,52 @@ text-align: center;
     font-size: 45px;
   }
 
-  
+
+  h1{
+    animation: myAnim 3s ease 0s 1 normal forwards;;
+  }
+  @keyframes myAnim {
+	0% {
+		animation-timing-function: ease-in;
+		opacity: 1;
+		transform: translateY(-45px);
+	}
+
+	24% {
+		opacity: 1;
+	}
+
+	40% {
+		animation-timing-function: ease-in;
+		transform: translateY(-24px);
+	}
+
+	65% {
+		animation-timing-function: ease-in;
+		transform: translateY(-12px);
+	}
+
+	82% {
+		animation-timing-function: ease-in;
+		transform: translateY(-6px);
+	}
+
+	93% {
+		animation-timing-function: ease-in;
+		transform: translateY(-4px);
+	}
+
+	25%,
+	55%,
+	75%,
+	87% {
+		animation-timing-function: ease-out;
+		transform: translateY(0px);
+	}
+
+	100% {
+		animation-timing-function: ease-out;
+		opacity: 1;
+		transform: translateY(0px);
+	}
+}
