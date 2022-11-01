@@ -1,11 +1,10 @@
 TIC-TAC-TOE
-Game in which two players take turns in drawing either an X or O in one square of a 3X3 grid. The winner is the first player to get three of the same symbols in a row. If nobody is able to get 3 in a row it's a draw
+Simple game built using HTML, CSS, and JavaScript
 
-RESET GAME
-clears the board
+The game has two players taking turns in drawing either an X or O in one square of a 3x3 grid. 
 
-RESET SCORE
-This will clear the board and set the Player 1 wins, Player 2 wins, and Draws to 0
+The winner is declared when the first player to get three of the same symbols in a row. Once a player wins the board will display the winners symbol. If nobody is able to get 3 in a row it's a draw.
+
 
  
 
