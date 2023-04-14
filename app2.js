@@ -64,7 +64,6 @@ function findWinner() {
         console.log("winner")
         endGame();
         allBoxes.fill(null)
-
     }
     else if ((allBoxes[0] != null && allBoxes[1] != null && allBoxes[2] != null &&
         allBoxes[3] != null && allBoxes[4] != null && allBoxes[5] != null &&
@@ -95,7 +94,6 @@ function endGame() {
 
 }
 
-
 //restart function
 function restart() {
     document.getElementById("box1").innerHTML = null;
@@ -110,13 +108,11 @@ function restart() {
     document.getElementById("text").innerText = 'PLAYER 1s TURN';
     turn = playerX;
     allBoxes.fill(null)
-
 }
 
 //Reset game button
 document.getElementById("resetGame").onclick = function () {
     restart()
-
 };
 
 //Reset score button
@@ -125,7 +121,6 @@ document.getElementById("resetScore").onclick = function () {
     p2Win.textContent = 0
     drawCount.textContent = 0
     restart()
-
 }
 
 //changing board to X or O

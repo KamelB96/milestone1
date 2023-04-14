@@ -1,0 +1,120 @@
+$font: 'Merienda';
+$border: 5px solid black;
+$ease-in: ease-in;
+$ease-out: ease-out;
+$center-text: center;
+
+body {
+    background-color: blanchedalmond;
+    font-family: $font;
+  }
+  
+  h1, h2, h3 {
+    text-align: center;
+    font-family: $font;
+    margin: 10px;
+  }
+  
+  h4 {
+    @extend h1;
+    color: black;
+    animation: animate 1.5s linear infinite;
+    font-weight: bold;
+    font-size: 30px;
+  }
+  
+  @keyframes animate {
+    0% {
+      opacity: 0.1;
+    }
+  
+    50% {
+      opacity: 0.7;
+    }
+  
+    100% {
+      opacity: .3;
+    }
+  }
+  
+  #score {
+    text-align: $center-text;
+  }
+  
+  #p1Score, #p2Score, #drawScore {
+    margin: auto;
+    display: inline-block;
+    padding-right: 25px;
+  }
+  
+  /* Table */
+  td {
+    width: 100px;
+    height: 100px;
+  }
+  
+  table {
+    margin: 5px auto;
+  }
+  
+  .vert {
+    border-left: $border;
+    border-right: $border;
+  }
+  
+  .hori {
+    border-top: $border;
+    border-bottom: $border;
+  }
+  
+  /* button desgin */
+  
+  #buttons {
+    padding-top: 20px;
+    text-align: $center-text;
+  }
+  
+  #box1, #box2, #box3, #box4, #box5, #box6, #box7, #box8, #box9, #boxes {
+    text-align: $center-text;
+    font-size: 45px;
+  }
+  
+  h1 {
+    animation: myAnim 3s ease 0s 1 normal forwards;
+  }
+  
+  @keyframes myAnim {
+    0% {
+      animation-timing-function: $ease-in;
+      opacity: 1;
+      transform: translateY(-45px);
+    }
+    24% {
+      opacity: 1;
+    } 
+    40% {
+      animation-timing-function: $ease-in;
+      transform: translateY(-24px);
+    }
+    65% {
+      animation-timing-function: $ease-in;
+      transform: translateY(-12px);
+    }
+    82% {
+      animation-timing-function: $ease-in;
+      transform: translateY(-6px);
+    }
+    93% {
+      animation-timing-function: $ease-in;
+      transform: translateY(-4px);
+    }
+    25%, 55%, 75%, 87% {
+      animation-timing-function: $ease-out;
+      transform: translateY(0px);
+    }
+    100% {
+      animation-timing-function: $ease-out;
+      opacity: 1;
+      transform: translateY(0px);
+    }
+  }
