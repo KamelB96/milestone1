@@ -91,7 +91,7 @@ function endGame() {
         p2Win.innerText++
         winner2()
     }
-
+ 
 }
 
 //restart function
